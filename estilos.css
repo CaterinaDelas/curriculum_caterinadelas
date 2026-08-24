@@ -1,0 +1,153 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+/* FONTFACE PARA TÍTULOS/SUBT. */
+
+@font-face {
+    font-family: 'Chillax REGULAR';
+    src: url(fuentes/Chillax-Regular.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax EXTRALIGHT';
+    src: url(fuentes/Chillax-Extralight.otf) format(opentype);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax MEDIUM';
+    src: url(fuentes/Chillax-Medium.otf) format(opentype);
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax BOLD';
+    src: url(fuentes/Chillax-Bold.otf) format(opentype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* SELECTORES UNIVERSALES */
+* {
+    font-family: 'Inter';
+}
+
+/* ESTILOS EN GENERAL */
+
+body {
+    background-color: rgb(255, 246, 205);
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(66, 66, 160);
+    color: rgb(255, 246, 205);
+}
+
+p {
+    text-wrap-style: stable;
+}
+
+li::marker {
+    color: rgb(224, 129, 192);
+}
+
+ul {
+    line-height: 1.3rem;
+}
+
+/* título */
+
+h1 {
+    font-family: 'Chillax EXTRALIGHT';
+    color: rgb(255, 246, 205);
+    font-size: 3rem;
+    letter-spacing: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* subtítulos */
+
+h2,
+h3 {
+    font-family: 'Chillax MEDIUM';
+    color: rgb(66, 66, 160);
+    line-height: 1.3rem;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: rgb(66, 66, 160);
+}
+
+/* SELECTORES DE CLASE O ID */
+
+#DATOS-ESENCIALES {
+    text-align: center;
+    background-color: rgb(66, 66, 160);
+}
+
+/* HEADER */
+
+#BAJADA-NOMBRE {
+    font-family: 'Chillax MEDIUM';
+    color: rgb(255, 246, 205);
+    line-height: 4rem;
+}
+
+/* CONTACTO */
+
+#SECCION-CONTACTO {
+    text-align: center;
+    line-height: 0.3rem;
+}
+
+#CONTACTO {
+    font-family: 'Chillax MEDIUM';
+    letter-spacing: 15px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.INFO-CONTACTO {
+    font-family: 'Chillax REGULAR';
+    color: rgb(66, 66, 160);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+#PORTFOLIO {
+    font-family: 'Chillax MEDIUM';
+    letter-spacing: 15px;
+    color: rgb(255, 246, 205);
+    line-height: 3rem;
+}
+
+#BSAS-ARG {
+    font-size: 0.6rem;
+    color: rgb(255, 246, 205);
+    line-height: 2rem;
+}
+
+#PERFIL-PROFESIONAL {
+    padding: 70px;
+}
