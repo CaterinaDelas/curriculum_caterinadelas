@@ -13,63 +13,110 @@
 <body>
     <header>
         <section id="DATOS-ESENCIALES">
-            <img src="img/dibujito.jpg" alt="Foto del CV" width="250" height="250">
-            <h1>caterina delás</h1>
-            <p id="BAJADA-NOMBRE">
-                Estudiante de Diseño y Comunicación visual</p>
+            <img src="img/dibujito.jpg" alt="Foto del CV" width="240" height="240">
+
+            <div id="NOMBRE-Y-BAJADA">
+                <h1>caterina delás</h1>
+                <p id="BAJADA-NOMBRE">
+                    DISEÑO Y COMUNICACIÓN VISUAL / ILUSTRACIÓN</p>
+            </div>
         </section>
     </header>
 
-    <main>
-
+    <main style="
+        display: flex;
+        flex-direction: column;
+        ">
 
         <section id="SECCION-CONTACTO">
-            <h3 id="CONTACTO">CONTACTO</h3>
-            <p class="INFO-CONTACTO">+54 9 11 3456-7890</p>
-            <p class="INFO-CONTACTO">holasoyunmail@gmail.com</p>
+            <h3>CONTACTO</h3>
+            <p id="INFO-CONTACTO">+54 9 11 3942 8277 / caterinadelaselli@gmail.com</p>
         </section>
 
-        <section id="PERFIL-PROFESIONAL">
-            <h2>/ Perfil</h2>
-            <p>Estudiante de Diseño y Comunicación visual, con fuerte inclinación hacia la ilustración y el diseño
-                editorial. Amante de los perritos.</p>
+        <section id="PERFIL-PROFESIONAL" style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            align-content: flex-start;
+            align-items: flex-start;
+            min-width: 500px;
+        ">
 
-            <h2>/ Formación</h2>
-            <ul>
-                <li>
-                    <h4>Licenciatura en Diseño y Comunicación visual</h4>
-                    <p> Universidad Nacional de Lanús</p>
-                    <p> 2023 - en curso</p>
-                </li>
-            </ul>
+            <div id="PERF-FORM-EXP">
+                <h2>| Perfil.</h2>
+                <p>
+                    Estudiante de Diseño y Comunicación visual, con fuerte inclinación hacia la
+                    ilustración y el diseño
+                    editorial. Amante de los perritos.
+                </p>
 
-            <h2>/ Habilidades</h2>
-            <ul>
-                <li>Diseño editorial</li>
-                <li>Ilustración</li>
-            </ul>
+                <h2>| Formación.</h2>
+                <ul>
+                    <li>
+                        <h4>Licenciatura en Diseño y Comunicación visual</h4>
+                        <p> Universidad Nacional de Lanús</p>
+                        <p class="DURACION"> 2023 - en curso</p>
+                    </li>
+                </ul>
 
-            <h2>/ Programas</h2>
-            <ul>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Indesign</li>
-            </ul>
-            <h2>/ Idiomas</h2>
-            <ul>
-                <li>Inglés</li>
-            </ul>
+                <h2>| Experiencia.</h2>
+                <ul>
+                    <li>
+                        <h4>Emprendimiento</h4>
+                        <p> Emprendimiento personal de ilustraciones personalizadas y servicios de diseño gráfico</p>
+                        <p class="DURACION"> 2025 - en curso</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="HAB-PRO-ID">
+
+                <h2>| Habilidades.</h2>
+                <ul>
+                    <li>Diseño editorial</li>
+                    <li>Ilustración</li>
+                </ul>
+                <h2>| Programas.</h2>
+
+                <section>
+                    <div class="PROGRAMAS">
+                        <img src="img/logo_illustrator_rosa.png" alt="logo_illustrator" width="35px" height="35px">
+                        Adobe Illustrator
+                    </div>
+                    <div class="PROGRAMAS">
+                        <img src="img/logo_photoshop_rosa.png" alt="logo_photoshop" width="35px" height="35px">
+                        Adobe Photoshop
+                    </div>
+                    <div class="PROGRAMAS">
+                        <img src="img/logo_indesign_rosa.png" alt="logo_indesign" width="35px" height="35px">
+                        Adobe Indesign
+                    </div>
+                </section>
+
+                <h2>| Idiomas.</h2>
+
+                <ul>
+                    <li>Español</li>
+                    <li>Inglés</li>
+                </ul>
+            </div>
         </section>
 
     </main>
     <footer>
         <section>
-            <h3 id="PORTFOLIO">PORTFOLIO</h3>
-            <p>
-                <a href="https://www.behance.net/whoskt">
-                    <img src="img/logo_behance.png" alt="Logo de Behance" width="100" height="100">
-                </a>
-            </p>
+            <h3 id="PORTFOLIO-Y-REDES">PORTFOLIO Y REDES</h3>
+            <nav>
+                <div class="REDES">
+                    <img src="img/logo_behance.png" alt="Logo de Behance" width="25" height="25">
+                    <a href="https://www.behance.net/whoskt">Behance</a>
+                </div>
+                <div class="REDES">
+                <img src="img/logoinstagram-05.png" alt="Logo de Instagram" width="25" height="25">
+                <a href="https://www.instagram.com/whoskt/">Instagram</a>
+                </div>
+            </nav>
             <p id="BSAS-ARG">Buenos Aires, Argentina</p>
         </section>
     </footer>
