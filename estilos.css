@@ -53,23 +53,42 @@ body {
     min-width: 300px;
 }
 
+header {
+    background-color: rgb(66, 66, 160);
+    padding: 30px;
+    min-width: 300px;
+    max-height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+main {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 footer {
     text-align: center;
     background-color: rgb(66, 66, 160);
     color: rgb(255, 246, 205);
-    padding: 50px;
-    min-height: 230px;
+    padding: 20px;
 }
 
-nav {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 25px;
-    margin: 20px 0 50px 0;
+nav a {
+    font-family: 'Chillax MEDIUM';
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    background: rgb(255, 246, 205);
+    border-radius: 100px;
+    color: rgb(66, 66, 160);
 }
 
 p {
@@ -78,7 +97,7 @@ p {
 }
 
 li::marker {
-    color: rgb(224, 129, 192);
+    color: rgb(66, 66, 160);
 }
 
 ul {
@@ -90,20 +109,15 @@ ul {
 h1 {
     font-family: 'Chillax MEDIUM';
     color: rgb(255, 246, 205);
-    font-size: 4.5rem;
+    font-size: 3rem;
     letter-spacing: 15px;
-    text-align: start;
-    line-height: 4.5rem;
-    margin-bottom: 20px;
 }
 
 /* subtítulos */
-
 h2,
 h3 {
     font-family: 'Chillax MEDIUM';
     color: rgb(66, 66, 160);
-    line-height: 1.3rem;
 }
 
 h2 {
@@ -114,9 +128,10 @@ h2 {
 
 h3 {
     font-size: 1rem;
-    color: rgb(66, 66, 160);
+    line-height: 1.3rem;
     letter-spacing: 15px;
-
+    color: rgb(255, 246, 205);
+    ;
 }
 
 h4 {
@@ -126,69 +141,29 @@ h4 {
 /* SELECTORES DE CLASE O ID */
 
 /* 1. HEADER */
-
-#DATOS-ESENCIALES {
-    background-color: rgb(66, 66, 160);
-    min-height: 300px;
-    padding: 30px;
-    min-width: 300px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 50px;
-}
-
-#NOMBRE-Y-BAJADA {
+#nombre-bajada {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-#BAJADA-NOMBRE {
+#bajada {
     font-family: 'Chillax REGULAR';
     color: rgb(255, 246, 205);
     line-height: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-bottom: 20px;
 }
 
 /* 2. MAIN */
 
-#SECCION-CONTACTO {
-    line-height: 2.3rem;
-    padding: 25px 50px 25px 50px;
-    min-height: 100px;
-    max-height: 160px;
-    border-width: thin;
-    border-color: rgb(66, 66, 160);
-    border-style: solid;
-    border-radius: 100px;
-    min-width: 250px;
-    max-width: 1080px;
+.contenido {
+    min-width: 300px;
     width: 100%;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-}
-
-#INFO-CONTACTO {
-    font-family: 'Chillax REGULAR';
-    font-size: 0.8rem;
-    color: rgb(66, 66, 160);
-    line-height: 1.2rem;
-    text-align: center;
-    margin: 10px;
-}
-
-#PERFIL-PROFESIONAL {
-    padding: 40px;
+    max-width: 700px;
 
     p {
         color: rgb(63, 63, 63);
@@ -196,47 +171,66 @@ h4 {
     }
 }
 
-.DURACION {
+.duracion {
     margin: 10px 0 0 0;
 }
 
-#PERF-FORM-EXP {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 700px;
-    padding-right: 30px;
-}
 
-#HAB-PRO-ID {
-    margin: 20px;
-    border-left: thin;
-    border-left-color: rgb(66, 66, 160);
-    border-left-style: solid;
-    padding-left: 40px;
-}
-.PROGRAMAS {
+.programas {
     line-height: 3rem;
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-/* 3. FOOTER */
+.contacto-portfolio {
 
-#PORTFOLIO-Y-REDES {
-    color: rgb(255, 246, 205);
+    p {
+        font-family: 'Chillax REGULAR';
+        font-size: 0.8rem;
+        color: rgb(255, 246, 205);
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    background: rgb(66, 66, 160);
+    border-radius: 100px;
+    min-width: 300px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 60px 0 30px 0;
+    padding: 20px 160px;
 }
 
-.REDES {
+/* 3. FOOTER */
+
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    margin: 15px 0 15px 0;
+
+    a {
+        color: rgb(255, 246, 205);
+    }
+}
+
+.img-red {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-#BSAS-ARG {
+#lugar {
     font-size: 0.6rem;
     color: rgb(255, 246, 205);
 }

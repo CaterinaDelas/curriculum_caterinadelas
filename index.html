@@ -12,113 +12,115 @@
 
 <body>
     <header>
-        <section id="DATOS-ESENCIALES">
-            <img src="img/dibujito.jpg" alt="Foto del CV" width="240" height="240">
+        <img src="img/dibujito.jpg" alt="Foto del CV" width="150" height="150">
+        <div id="nombre-bajada">
 
-            <div id="NOMBRE-Y-BAJADA">
-                <h1>caterina delás</h1>
-                <p id="BAJADA-NOMBRE">
-                    DISEÑO Y COMUNICACIÓN VISUAL / ILUSTRACIÓN</p>
-            </div>
-        </section>
+            <h1>caterina delás</h1>
+            <p id="bajada">
+                DISEÑO Y COMUNICACIÓN VISUAL / ILUSTRACIÓN</p>
+            <nav>
+                <a href="#contactos-portfolio">Contacto / Portfolio</a>
+            </nav>
+        </div>
+
     </header>
 
-    <main style="
-        display: flex;
-        flex-direction: column;
-        ">
+    <main>
 
-        <section id="SECCION-CONTACTO">
+        <section class="contenido">
+
+            <h2>| Perfil.</h2>
+            <p>
+                Estudiante de Diseño y Comunicación visual, con fuerte inclinación hacia la
+                ilustración y el diseño
+                editorial. Amante de los perritos.
+            </p>
+        </section>
+
+        <section class="contenido">
+            <h2>| Formación.</h2>
+            <ul>
+                <li>
+                    <h4>Licenciatura en Diseño y Comunicación visual</h4>
+                    <p> Universidad Nacional de Lanús</p>
+                    <p class="duracion"> 2023 - en curso</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contenido">
+            <h2>| Experiencia.</h2>
+            <ul>
+                <li>
+                    <h4>Emprendimiento</h4>
+                    <p> Emprendimiento personal de ilustraciones personalizadas y servicios de diseño gráfico</p>
+                    <p class="duracion"> 2025 - en curso</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contenido">
+
+            <h2>| Habilidades.</h2>
+            <ul>
+                <li>Diseño editorial</li>
+                <li>Ilustración</li>
+            </ul>
+        </section>
+
+        <section class="contenido">
+            <h2>| Programas.</h2>
+            <div class="programas">
+                <img src="img/logo_illustrator_rosa.png" alt="logo_illustrator" width="35px" height="35px">
+                Adobe Illustrator
+            </div>
+            <div class="programas">
+                <img src="img/logo_photoshop_rosa.png" alt="logo_photoshop" width="35px" height="35px">
+                Adobe Photoshop
+            </div>
+            <div class="programas">
+                <img src="img/logo_indesign_rosa.png" alt="logo_indesign" width="35px" height="35px">
+                Adobe Indesign
+            </div>
+        </section>
+
+        <section class="contenido">
+            <h2>| Idiomas.</h2>
+
+            <ul>
+                <li>Español</li>
+                <li>Inglés</li>
+            </ul>
+        </section>
+
+        <div id="contactos-portfolio">
+
+        <section class="contacto-portfolio">
             <h3>CONTACTO</h3>
-            <p id="INFO-CONTACTO">+54 9 11 3942 8277 / caterinadelaselli@gmail.com</p>
-        </section>
-
-        <section id="PERFIL-PROFESIONAL" style="
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            flex-direction: row;
-            align-content: flex-start;
-            align-items: flex-start;
-            min-width: 500px;
-        ">
-
-            <div id="PERF-FORM-EXP">
-                <h2>| Perfil.</h2>
-                <p>
-                    Estudiante de Diseño y Comunicación visual, con fuerte inclinación hacia la
-                    ilustración y el diseño
-                    editorial. Amante de los perritos.
-                </p>
-
-                <h2>| Formación.</h2>
-                <ul>
-                    <li>
-                        <h4>Licenciatura en Diseño y Comunicación visual</h4>
-                        <p> Universidad Nacional de Lanús</p>
-                        <p class="DURACION"> 2023 - en curso</p>
-                    </li>
-                </ul>
-
-                <h2>| Experiencia.</h2>
-                <ul>
-                    <li>
-                        <h4>Emprendimiento</h4>
-                        <p> Emprendimiento personal de ilustraciones personalizadas y servicios de diseño gráfico</p>
-                        <p class="DURACION"> 2025 - en curso</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="HAB-PRO-ID">
-
-                <h2>| Habilidades.</h2>
-                <ul>
-                    <li>Diseño editorial</li>
-                    <li>Ilustración</li>
-                </ul>
-                <h2>| Programas.</h2>
-
-                <section>
-                    <div class="PROGRAMAS">
-                        <img src="img/logo_illustrator_rosa.png" alt="logo_illustrator" width="35px" height="35px">
-                        Adobe Illustrator
-                    </div>
-                    <div class="PROGRAMAS">
-                        <img src="img/logo_photoshop_rosa.png" alt="logo_photoshop" width="35px" height="35px">
-                        Adobe Photoshop
-                    </div>
-                    <div class="PROGRAMAS">
-                        <img src="img/logo_indesign_rosa.png" alt="logo_indesign" width="35px" height="35px">
-                        Adobe Indesign
-                    </div>
-                </section>
-
-                <h2>| Idiomas.</h2>
-
-                <ul>
-                    <li>Español</li>
-                    <li>Inglés</li>
-                </ul>
+            <div>
+                <p>+54 9 11 3942 8277 / caterinadelaselli@gmail.com</p>
             </div>
         </section>
 
-    </main>
-    <footer>
-        <section>
-            <h3 id="PORTFOLIO-Y-REDES">PORTFOLIO Y REDES</h3>
-            <nav>
-                <div class="REDES">
+        <section class="contacto-portfolio">
+            <h3>PORTFOLIO</h3>
+
+            <div id="redes">
+                <div class="img-red">
                     <img src="img/logo_behance.png" alt="Logo de Behance" width="25" height="25">
                     <a href="https://www.behance.net/whoskt">Behance</a>
                 </div>
-                <div class="REDES">
-                <img src="img/logoinstagram-05.png" alt="Logo de Instagram" width="25" height="25">
-                <a href="https://www.instagram.com/whoskt/">Instagram</a>
+                <div class="img-red">
+                    <img src="img/logoinstagram-05.png" alt="Logo de Instagram" width="25" height="25">
+                    <a href="https://www.instagram.com/whoskt/">Instagram</a>
                 </div>
-            </nav>
-            <p id="BSAS-ARG">Buenos Aires, Argentina</p>
+            </div>
         </section>
+        </div>
+
+    </main>
+    <footer>
+        <p id="lugar">Buenos Aires, Argentina</p>
     </footer>
 </body>
 
