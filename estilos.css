@@ -55,22 +55,40 @@ body {
 
 header {
     background-color: rgb(66, 66, 160);
-    padding: 30px;
-    min-width: 300px;
-    max-height: 500px;
+    padding: 15px 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: center;
     gap: 40px;
     position: fixed;
     top: 0;
     width: 100%;
+    align-items: center;
+    font-size: 1rem;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    p {
+        font-family: 'Chillax REGULAR';
+        color: rgb(255, 246, 205);
+    }
+
+    nav a {
+        font-family: 'Chillax MEDIUM';
+        font-size: 1rem;
+        padding: 4px 12px;
+        background: rgb(255, 246, 205);
+        border-radius: 100px;
+        color: rgb(66, 66, 160);
+    }
 }
 
 main {
-    margin: 250px 50px 50px 50px;
+    margin: 100px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,15 +99,6 @@ footer {
     background-color: rgb(66, 66, 160);
     color: rgb(255, 246, 205);
     padding: 20px;
-}
-
-nav a {
-    font-family: 'Chillax MEDIUM';
-    font-size: 0.7rem;
-    padding: 4px 12px;
-    background: rgb(255, 246, 205);
-    border-radius: 100px;
-    color: rgb(66, 66, 160);
 }
 
 p {
@@ -111,7 +120,6 @@ h1 {
     font-family: 'Chillax MEDIUM';
     color: rgb(255, 246, 205);
     font-size: 3rem;
-    letter-spacing: 15px;
 }
 
 /* subtítulos */
@@ -130,28 +138,41 @@ h2 {
 h3 {
     font-size: 1rem;
     line-height: 1.3rem;
-    letter-spacing: 15px;
     color: rgb(255, 246, 205);
-    ;
+    letter-spacing: 8px;
 }
 
 h4 {
     color: rgb(66, 66, 160);
+    margin: 10px 0 5px 0;
+    font-size: 1.2rem;
 }
 
 /* SELECTORES DE CLASE O ID */
 
-/* 1. HEADER */
+/* 2. MAIN */
+
+#presentacion {
+    background-color: rgb(66, 66, 160);
+    border-radius: 40px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    line-height: 6rem;
+    margin: 20px;
+}
 
 #bajada {
     font-family: 'Chillax REGULAR';
     color: rgb(255, 246, 205);
-    line-height: 1rem;
-    font-size: 0.7rem;
+    line-height: 2.3rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
+    max-width: 700px;
 }
-
-/* 2. MAIN */
 
 .contenido {
     min-width: 300px;
@@ -160,24 +181,39 @@ h4 {
 
     p {
         color: rgb(63, 63, 63);
-        max-width: 700px;
+        width: 100%;
+        line-height: 1.3rem;
+    }
+
+    ul {
+        line-height: 1.7rem;
+    }
+
+    .duracion {
+        color: #e18297c9;
+        margin: 10px 0;
+        font-weight: 500;
+        /* Bold */
     }
 }
 
-.duracion {
-    margin: 10px 0 0 0;
-    font-weight: 700;
-    /* Bold */
+/*SECCIÓN PROGRAMAS*/
+
+#programas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-
 .programas {
-    line-height: 3rem;
     display: flex;
     gap: 10px;
     align-items: center;
     font-style: italic;
 }
+
+/*ACÁ TERMINA SECCIÓN PROGRAMAS*/
 
 #galeria {
     background-color: #e18297c9;
@@ -191,9 +227,9 @@ h4 {
     }
 
     h3 {
-       text-align: center;
-       margin: 30px 0 20px 0;
-       font-size: 1.3rem;
+        text-align: center;
+        margin: 30px 0 20px 0;
+        font-size: 1.3rem;
     }
 }
 
@@ -204,8 +240,6 @@ h4 {
     flex-wrap: wrap;
 
     img {
-        height: 345px;
-        width: 260px;
         max-width: 100%;
         object-fit: contain;
         border-radius: 20px;
@@ -247,8 +281,7 @@ h4 {
         font-family: 'Chillax REGULAR';
         font-size: 0.8rem;
         color: rgb(255, 246, 205);
-        line-height: 1rem;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     background: rgb(66, 66, 160);
@@ -268,6 +301,7 @@ h4 {
 
     a {
         color: rgb(255, 246, 205);
+        font-size: 0.8rem;
     }
 }
 
