@@ -1,7 +1,11 @@
-Curriculum Vitae / Caterina Delás
+# Currículum Vitae / Caterina Delás
+Este repositorio adjunta lo que sería el primer trabajo práctico de Computación III, en UNLa.
+El currículum fue la forma para aprender a cómo manejarse con HTML5, CSS y cómo diagramarlo con Flexbox.
 
-Tamaño de la pantalla: 1920 x 1080 px
+## Otros datos:
 
-Editor de código: Visual Studio Code
+* Tamaño de la pantalla: 1920 x 1080 px
 
-Finalmente no hay link a Figma :(
+* Editor de código: Visual Studio Code
+
+(Finalmente no hay link a Figma :( )
