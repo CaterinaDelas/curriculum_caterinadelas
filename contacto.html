@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Caterina Delas - Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="img/svg/ojo_abierto.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <main class="contacto-grid">
+
+        <section class="contacto-imagen">
+            <img src="img/SVG/kt_borde.svg">
+        </section>
+
+        <section class="contacto-formulario">
+
+            <article class="data-formulario">
+                <a href="index.html" class="volver">Volver al inicio</a>
+
+                <div class="data-formulario-h1">
+                    <h1 id="trabajemos">TRABAJEMOS</h1>
+                    <h1 id="juntos">JUNT@S :)</h1>
+                </div>
+
+                <p>Rellená los datos para contactarme.</p>
+
+            </article>
+
+            <article>
+
+                <form id="formulario">
+
+                    <div class="formulario-columna">
+
+                        <div class="input-columna">
+                            <label for="nombre">Nombre y apellido<span class="campo-obligatorio"> *</span></label>
+                            <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Ej. Olivia Elly" required>
+                        </div>
+
+                        <div class="input-columna">
+                            <label for="email">Email<span class="campo-obligatorio"> *</span></label>
+                            <input type="email" name="email" id="email" placeholder="Ej. oliviaelly@gmail.com" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="formulario-columna">
+
+                        <div class="input-columna">
+                            <label for="tel">Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono" maxlength="10" placeholder="00 0000 0000">
+                        </div>
+
+                        <div class="input-columna">
+                            <label for="nombre">Edad</label>
+                            <input type="number" name="edad" id="edad" min="18" max="100" placeholder="00">
+                        </div>
+
+                    </div>
+
+                    <div id="input-mensaje">
+                        <label for="mensaje">Mensaje<span class="campo-obligatorio"> *</span></label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Escriba aquí su consulta o mensaje"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">ENVIAR</button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+    </main>
+</body>
