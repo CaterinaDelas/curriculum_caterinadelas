@@ -2,31 +2,46 @@
 @charset "UTF-8";
 
 /* CHILLAX FONT */
-@font-face {
-    font-family: 'Chillax REGULAR';
-    src: url(fuentes/Chillax-Regular.otf) format(opentype);
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Chillax EXTRALIGHT';
     src: url(fuentes/Chillax-Extralight.otf) format(opentype);
-    font-weight: 100;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax LIGHT';
+    src: url(fuentes/Chillax-Light.otf) format(opentype);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax REGULAR';
+    src: url(fuentes/Chillax-Regular.otf) format(opentype);
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Chillax MEDIUM';
     src: url(fuentes/Chillax-Medium.otf) format(opentype);
-    font-weight: medium;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax SEMIBOLD';
+    src: url(fuentes/Chillax-Semibold.otf) format(opentype);
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Chillax BOLD';
     src: url(fuentes/Chillax-Bold.otf) format(opentype);
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -47,6 +62,7 @@
     padding: 0;
     color: var(--azul);
     font-size: 16px;
+    line-height: 22px;
 
 }
 
@@ -126,6 +142,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
+
 }
 
 a {
@@ -156,9 +173,8 @@ a {
 
 header p {
     color: var(--blancont);
-    font-family: Chillax, sans-serif;
+    font-family: 'Chillax SEMIBOLD';
     font-size: 16px;
-    font-weight: 600;
 }
 
 .logo-y-nombre {
@@ -175,15 +191,14 @@ nav {
 }
 
 .botones-nav {
-    font-family: 'Chillax', sans-serif;
+    font-family: 'Chillax REGULAR';
     font-size: 16px;
-    font-weight: 400;
     color: var(--blancont);
     transition: font-weight 0.15s ease;
 }
 
 .botones-nav:hover {
-    font-weight: 600;
+    font-family: 'Chillax SEMIBOLD';
 }
 
 /** FOOTERs **/
@@ -199,7 +214,7 @@ footer {
 }
 
 footer p {
-    font-family: Chillax;
+    font-family: 'Chillax LIGHT';
     color: var(--azul);
     margin: 10px 0;
 }
@@ -246,20 +261,18 @@ main {
 .portada-nombre-y-bajada h1 {
     color: var(--azul);
     text-align: center;
-    font-family: Chillax, sans-serif;
-    font-size: clamp(40px, 10vw, 160px);
-    font-weight: 600;
-    line-height: 1.1;
+    font-family: 'Chillax SEMIBOLD';
+    font-size: 160px;
+    line-height: 170px;
 
 }
 
 .portada-nombre-y-bajada h4 {
     color: var(--rosa-texto);
     text-align: center;
-    font-family: Chillax, sans-serif;
-    font-size: clamp(16px, 2.5vw, 28px);
-    font-weight: 600;
-    line-height: 1.2;
+    font-family: 'Chillax SEMIBOLD';
+    font-size: 28px;
+    line-height: 30px;
 }
 
 /* INDEX.HTML - flechita de portada */
@@ -305,9 +318,8 @@ main {
     border-radius: 20px;
     background: var(--azul);
     color: var(--blancont);
-    font-family: Chillax, sans-serif;
+    font-family: 'Chillax SEMIBOLD';
     font-size: 72px;
-    font-weight: 600;
     line-height: 72px;
     box-sizing: border-box;
     white-space: nowrap;
@@ -402,6 +414,8 @@ main {
 }
 
 .desplegable:hover .texto-desplegado {
+    font-family: Inter;
+    font-weight: 500;
     opacity: 1;
     max-height: 500px;
     margin-top: 28px;
@@ -420,8 +434,8 @@ main {
 
 /* CONTACTO.HTML - MAIN */
 
-/* CONTACTO.HTML - grilla contenedor */
-.contacto-grid {
+/* CONTACTO.HTML - contenedor */
+.contacto-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
@@ -430,7 +444,6 @@ main {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-
 }
 
 /* CONTACTO.HTML - imagen */
@@ -470,10 +483,8 @@ main {
 }
 
 .contacto-formulario p {
-    font-family: Chillax;
+    font-family: 'Chillax MEDIUM';
     font-size: 22px;
-    font-style: italic;
-    font-weight: 500;
 }
 
 /* CONTACTO.HTML - volver al inicio */
@@ -485,8 +496,7 @@ main {
     color: var(--blancont);
     padding: 8px 32px;
     border-radius: 20px;
-    font-family: Chillax;
-    font-weight: 400;
+    font-family: 'Chillax REGULAR';
     font-size: 16px;
     cursor: pointer;
     text-transform: uppercase;
@@ -497,9 +507,8 @@ main {
 /* CONTACTO.HTML - h1 */
 
 .contacto-formulario h1 {
-    font-family: Chillax;
+    font-family: 'Chillax SEMIBOLD';
     font-size: 68px;
-    font-weight: 600;
     line-height: 68px;
 }
 
@@ -543,7 +552,7 @@ label {
     background-color: #E2E2E6;
     border: none;
     border-radius: 12px;
-    font-family: Chillax, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     color: var(--azul);
     box-sizing: border-box;
@@ -572,7 +581,7 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: #E2E2E6;
     border: none;
     border-radius: 24px;
-    font-family: Chillax, sans-serif;
+    font-family: 'Chillax REGULAR';
     font-size: 16px;
     color: var(--azul);
     box-sizing: border-box;
@@ -596,8 +605,7 @@ input[type="number"]::-webkit-outer-spin-button {
     color: var(--blancont);
     padding: 8px 32px;
     border-radius: 20px;
-    font-family: Chillax;
-    font-weight: 600;
+    font-family: 'Chillax SEMIBOLD';
     font-size: 20px;
     cursor: pointer;
     text-transform: uppercase;
@@ -610,10 +618,9 @@ input[type="number"]::-webkit-outer-spin-button {
 /* PROYECTOS.HTML - MAIN*/
 
 .proyectos-titulo {
-    color: var(--Rosita, #DB8E9E);
-    font-family: Chillax;
+    color: var(--Rosita);
+    font-family: 'Chillax SEMIBOLD';
     font-size: 80px;
-    font-weight: 600;
     line-height: 80px;
 }
 
@@ -624,10 +631,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .proyectos-grupos h2 {
-    color: var(--Azul, #4242A0);
-    font-family: Chillax;
+    color: var(--Azul);
+    font-family: 'Chillax REGULAR';
     font-size: 40px;
-    font-weight: 400;
     line-height: 40px;
 }
 
@@ -690,9 +696,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .proyecto-overlay p {
     color: var(--blancont);
-    font-family: Chillax;
+    font-family: 'Chillax LIGHT';
     font-size: 32px;
-    font-weight: 500;
     line-height: 36px;
     margin: 0;
 
@@ -700,7 +705,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* PROYECTOS.HTML - tarjetas - hover */
 .tarjeta-proyecto:hover .proyecto-overlay {
-    opacity: 90%;
+    opacity: 95%;
 }
 
 /* PROYECTOS.HTML - visuales */
@@ -725,16 +730,15 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .bajada-ilustraciones-visuales-fecha {
     border-radius: 16px;
-    background: var(--Azul, #4242A0);
+    background: var(--azul);
     display: flex;
     height: 28px;
     width: 70px;
     justify-content: center;
     align-items: center;
-    color: var(--Blancont, #FFFCEF);
-    font-family: Chillax;
+    color: var(--blancont);
+    font-family: 'Chillax MEDIUM';
     font-size: 18px;
-    font-weight: 500;
     line-height: 20px;
 }
 
@@ -769,7 +773,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .grid-item img {
     border-radius: 20px;
     width: 100%;
-    height: 100%;
+    height: 470px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -777,7 +781,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* items - hover */
 
 .grid-item:hover img {
-    transform: scale(1.05)
+    transform: scale(1.03)
 }
 
 /* PROYECTOS.HTML - currículum */
@@ -798,8 +802,7 @@ input[type="number"]::-webkit-outer-spin-button {
     color: var(--blancont);
     padding: 12px 32px;
     border-radius: 20px;
-    font-family: Chillax;
-    font-weight: 400;
+    font-family: 'Chillax REGULAR';
     font-size: 16px;
     text-transform: uppercase;
     display: inline-block;
@@ -815,7 +818,7 @@ input[type="number"]::-webkit-outer-spin-button {
     transform: scale(1.05);
 }
 
-.curriculum-accordion[open] > summary {
+.curriculum-accordion[open]>summary {
     display: none;
 }
 
@@ -840,8 +843,7 @@ input[type="number"]::-webkit-outer-spin-button {
     color: var(--blancont);
     padding: 12px 32px;
     border-radius: 20px;
-    font-family: Chillax;
-    font-weight: 400;
+    font-family: 'Chillax REGULAR';
     font-size: 16px;
     cursor: pointer;
     text-transform: uppercase;
@@ -855,10 +857,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Títulos h2 unificados */
 .curriculum-contenido-interno h2 {
-    font-family: Chillax;
+    font-family: 'Chillax SEMIBOLD';
     color: var(--azul);
     font-size: 1.8rem;
-    font-weight: 600;
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -930,4 +931,107 @@ input[type="number"]::-webkit-outer-spin-button {
     font-style: italic;
     color: var(--azul-texto);
     margin-bottom: 8px;
+}
+
+/** "ILUSTRACION-ZOOM".HTML **/
+
+/* "ILUSTRACION-ZOOM".HTML - body */
+/* este body es para que aparezca siempre con el zoomde 90% se supone */
+
+.pagina-con-zoom {
+    transform: scale(0.9);
+    width: 111.11vw;
+    min-height: 111.11vh;
+    overflow-x: hidden;
+}
+
+/* "ILUSTRACION-ZOOM".HTML - contenedor */
+
+.ilustracion-zoom-contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blancont);
+}
+
+/* "ILUSTRACION-ZOOM".HTML - data */
+
+.ilustracion-data {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 60px;
+    box-sizing: border-box;
+    background-color: var(--blancont);
+    gap: 40px;
+}
+
+.header-trucho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.header-trucho p {
+    width: 348px;
+    font-family: 'Chillax SEMIBOLD';
+}
+
+.ilustracion-descripcion {
+    display: flex;
+    width: 348px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ilustracion-descripcion h1 {
+
+    color: var(--rosa-texto);
+    font-family: 'Chillax SEMIBOLD';
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.ilustracion-descripcion h2 {
+
+    color: var(--rosa-texto);
+    font-family: 'Chillax REGULAR';
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.ilustracion-descripcion-titulo-bajada {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+/* "ILUSTRACION-ZOOM".HTML - imagen */
+.ilustracion-zoom {
+    width: 1073px;
+    min-width: 1073px;
+    height: 1080px;
+    max-height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ilustracion-zoom img {
+    display: block;
+    max-width: none;
+    height: auto;
 }
