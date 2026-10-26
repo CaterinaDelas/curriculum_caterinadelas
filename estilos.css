@@ -935,16 +935,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /** "ILUSTRACION-ZOOM".HTML **/
 
-/* "ILUSTRACION-ZOOM".HTML - body */
-/* este body es para que aparezca siempre con el zoomde 90% se supone */
-
-.pagina-con-zoom {
-    transform: scale(0.9);
-    width: 111.11vw;
-    min-height: 111.11vh;
-    overflow-x: hidden;
-}
-
 /* "ILUSTRACION-ZOOM".HTML - contenedor */
 
 .ilustracion-zoom-contenedor {
