@@ -139,7 +139,6 @@ body {
     background-color: var(--blancont);
     overflow-x: hidden;
     width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
     margin: 0 40px;
 
@@ -184,7 +183,7 @@ header p {
     gap: 10px;
 }
 
-nav {
+.nav-escritorio {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -293,13 +292,12 @@ main {
     padding: 50px 0;
     align-items: center;
     box-sizing: border-box;
-    gap: 60px
+    gap: 60px;
 }
 
 .contenidos-botones-todos {
     display: flex;
     width: 100%;
-    max-width: auto;
     flex-direction: column;
     align-items: center;
     gap: 60px;
@@ -454,13 +452,12 @@ main {
 
 .contacto-imagen {
     background-color: var(--azul);
-    padding: 100px;
+    padding: 80px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     box-sizing: border-box;
 }
 
@@ -507,17 +504,17 @@ main {
 
 /* CONTACTO.HTML - h1 */
 
-.contacto-formulario h1 {
+#trabajemos {
     font-family: 'Chillax SEMIBOLD';
     font-size: 68px;
     line-height: 68px;
-}
-
-#trabajemos {
     color: var(--azul)
 }
 
 #juntos {
+    font-family: 'Chillax SEMIBOLD';
+    font-size: 68px;
+    line-height: 68px;
     color: var(--rosita)
 }
 
@@ -619,7 +616,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* PROYECTOS.HTML - MAIN*/
 
 .proyectos-titulo {
-    color: var(--Rosita);
+    color: var(--rosita);
     font-family: 'Chillax SEMIBOLD';
     font-size: 80px;
     line-height: 80px;
@@ -632,7 +629,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .proyectos-grupos h2 {
-    color: var(--Azul);
+    color: var(--azul);
     font-family: 'Chillax REGULAR';
     font-size: 40px;
     line-height: 40px;
@@ -659,7 +656,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     align-items: center;
     align-content: center;
-    gap: 16px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -754,7 +751,6 @@ input[type="number"]::-webkit-outer-spin-button {
     grid-template-columns: repeat(4, 348px);
     grid-template-rows: auto;
     gap: 40px 20px;
-    grid-gap: 40px 20px;
 }
 
 .a {
@@ -773,8 +769,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .grid-item img {
     border-radius: 20px;
-    width: 100%;
-    height: 470px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -934,35 +928,58 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-bottom: 8px;
 }
 
-/** "ILUSTRACION-ZOOM".HTML **/
+/** ILUSTRACION-ZOOM **/
 
-/* "ILUSTRACION-ZOOM".HTML - contenedor */
-
-.ilustracion-zoom-contenedor {
-    display: flex;
-    flex-direction: row;
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
+    background-color: rgba(63, 67, 150, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-contenedor:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-contenedor .ilustracion-zoom-contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    max-width: 1420px;
+    height: 85vh;
+    max-height: 900px;
+    background-color: var(--blancont);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--blancont);
 }
 
-/* "ILUSTRACION-ZOOM".HTML - data */
-
 .ilustracion-data {
-    flex: 1;
-    height: 100vh;
+    width: 400px;
+    min-width: 400px;
+    height: 100%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 60px;
+    align-items: flex-start;
+    padding: 40px;
     box-sizing: border-box;
     background-color: var(--blancont);
-    gap: 40px;
+    gap: 30px;
 }
 
 .header-trucho {
@@ -970,36 +987,34 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-self: stretch;
+    width: 100%;
 }
 
 .header-trucho p {
-    width: 348px;
     font-family: 'Chillax SEMIBOLD';
+    font-size: 14px;
 }
 
 .ilustracion-descripcion {
     display: flex;
-    width: 348px;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
 }
 
 .ilustracion-descripcion h1 {
-
     color: var(--rosa-texto);
     font-family: 'Chillax SEMIBOLD';
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 40px;
 }
 
 .ilustracion-descripcion h2 {
-
     color: var(--rosa-texto);
     font-family: 'Chillax REGULAR';
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .ilustracion-descripcion-titulo-bajada {
@@ -1007,22 +1022,304 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
+    width: 100%;
 }
 
-/* "ILUSTRACION-ZOOM".HTML - imagen */
 .ilustracion-zoom {
-    width: 1073px;
-    min-width: 1073px;
-    height: 1080px;
-    max-height: 100vh;
+    flex: 1;
+    height: 100%;
     overflow: auto;
     box-sizing: border-box;
     position: relative;
+    background-color: var(--blancont);
 }
 
 .ilustracion-zoom img {
     display: block;
     max-width: none;
-    height: auto;
 }
+
+/* Menú y footer específicos de celular: ocultos en escritorio. */
+.menu-hamburguesa {
+    display: none;
+}
+
+#footer-mobile {
+    display: none;
+}
+
+/**** MOBILE / RESPONSIVE ****/
+
+@media screen and (max-width: 500px) {
+
+    html,
+    body {
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 65px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+
+    /* HEADER */
+    .header-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+        box-sizing: border-box;
+    }
+
+    .header-azul {
+        background-color: var(--blancont);
+        width: 100%;
+        min-width: unset;
+        border-radius: 0;
+        padding: 10px 16px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-escritorio {
+        display: none;
+    }
+
+    /* menu de hamburguesa */
+
+    .menu-hamburguesa {
+        display: block;
+        position: relative;
+    }
+
+    .menu-hamburguesa summary {
+        list-style: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--azul);
+        background: transparent;
+        border: none;
+    }
+
+    .menu-hamburguesa summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .menu-hamburguesa-contenido {
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background-color: var(--azul);
+        border-radius: 20px;
+        padding: 24px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        min-width: 170px;
+        z-index: 1100;
+        box-sizing: border-box;
+    }
+
+    /* Estilo para los enlaces del menú */
+    .menu-hamburguesa-contenido a {
+        color: var(--blancont);
+        font-family: 'Chillax REGULAR';
+        font-size: 18px;
+    }
+
+    .menu-hamburguesa-contenido a:hover {
+        opacity: 0.8;
+    }
+
+    .menu-hamburguesa-contenido p {
+        color: var(--blancont);
+        font-family: 'Chillax SEMIBOLD';
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .logo-y-nombre {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .contenedor-ojito {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-nombre {
+        color: var(--azul);
+        font-size: 13px;
+    }
+
+    .proyectos-titulo {
+        font-size: 40px;
+        line-height: 36px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .proyectos-grupos {
+        width: 100%;
+        gap: 80px;
+        box-sizing: border-box;
+    }
+
+    .proyectos-grupos h2 {
+        font-size: 28px;
+        line-height: 24px;
+    }
+
+    /* "carruseles" */
+    .proyectos {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .proyectos .fila {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        width: 100%;
+        padding-bottom: 15px;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* DISEÑO EDITORIAL / IDENTIDAD GRÁFICA */
+    .proyectos .fila .tarjeta-proyecto {
+        flex: 0 0 100%;
+        width: 100%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .proyectos .fila .tarjeta-proyecto img.proyecto-portada {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /* VISUALES */
+
+    .proyectos .fila .tarjeta-visuales {
+        flex: 0 0 100%;
+        width: 100%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+    }
+
+    .proyectos .fila .tarjeta-visuales video.proyecto-portada {
+        display: block;
+        width: 100%;
+        height: 702px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /* GALERÍA */
+    .grid-container-ilustraciones {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 12px;
+        box-sizing: border-box;
+    }
+
+    .grid-container-ilustraciones .grid-item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* esto es para "chasco" con las dos columnas */
+    .grid-container-ilustraciones .grid-item.a {
+        grid-column: 1 / -1;
+    }
+
+    .grid-container-ilustraciones .grid-item img {
+        display: block;
+        width: 100%;
+        height: 308px;
+        aspect-ratio: 348 / 470;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .grid-container-ilustraciones .grid-item.a img {
+        aspect-ratio: 716 / 470 !important;
+    }
+
+    .grid-container-ilustraciones .bajada-ilustraciones-visuales {
+        display: flex;
+        align-items: flex-start;
+        gap: 6px;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    /* botón para ir SUPUESTAMENTE al currículum */
+    .boton-curriculum-mobile-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: var(--rosita);
+        color: var(--blancont);
+        padding: 12px 32px;
+        border-radius: 20px;
+        font-family: 'Chillax REGULAR';
+        font-size: 16px;
+        box-sizing: border-box;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    /* FOOTER */
+
+    .footer-mobile {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--rosita);
+        padding: 24px 16px;
+        box-sizing: border-box;
+    }
+
+    .footer-nav-mobile {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+}
+
+/* esto es para ocultar cositas */
+    .curriculum-accordion {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }

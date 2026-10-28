@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caterina Delas - Proyectos</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/png" href="img/svg/ojo_abierto.svg">
@@ -13,9 +14,7 @@
 
 <body>
     <header class="header-container">
-
         <div class="header-azul">
-
             <!-- logo / nombre -->
             <div class="logo-y-nombre">
                 <div class="contenedor-ojito">
@@ -25,15 +24,25 @@
                 <p class="header-nombre"> / CATERINA DELÁS. </p>
             </div>
 
-            <!-- nav -->
-            <nav>
+            <!-- nav escritorio -->
+            <nav class="nav-escritorio">
                 <p>Proyectos</p>
                 <a href="contacto.html" class="botones-nav">Contacto</a>
                 <a href="index.html" class="botones-nav">Inicio</a>
             </nav>
 
+            <!-- menú hamburguesa -->
+            <details class="menu-hamburguesa">
+                <summary>☰</summary>
+                <nav class="menu-hamburguesa-contenido">
+                    <p>Proyectos</p>
+                    <a href="index.html">Inicio</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </details>
         </div>
 
+        </div>
     </header>
 
     <main>
@@ -116,28 +125,28 @@
                 <div class="fila">
 
                     <!-- misu -->
-                    <article class="tarjeta-visuales">
+                    <div class="tarjeta-visuales">
                         <video src="img/web/visuales_mp4/misu.mp4" class="proyecto-portada" width="469" height="709"
-                            autoplay muted loop playsinline>
+                            controls playsinline>
                         </video>
                         <div class="bajada-ilustraciones-visuales">
                             <p class="bajada-ilustraciones-visuales-fecha">2026</p>
                             <p>/ misu.</p>
                         </div>
 
-                    </article>
+                    </div>
 
                     <!-- mercado trucho -->
 
-                    <article class="tarjeta-visuales">
+                    <div class="tarjeta-visuales">
                         <video src="img/web/visuales_mp4/final_d2.mp4" class="proyecto-portada" width="469" height="709"
-                            autoplay muted loop playsinline>
+                            controls playsinline>
                         </video>
                         <div class="bajada-ilustraciones-visuales">
                             <p class="bajada-ilustraciones-visuales-fecha">2026</p>
                             <p>/ mercado trucho.</p>
                         </div>
-                    </article>
+                    </div>
 
                 </div>
             </article>
@@ -148,8 +157,9 @@
 
         <section class="grid-container-ilustraciones">
 
+            <!-- CHASCO -->
             <article class="grid-item a">
-                <a href="chasco.html">
+                <a href="#modal-chasco">
                     <img src="img/web/ilustraciones/chasco.png" alt="chasco" width="716" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -158,8 +168,36 @@
                 </div>
             </article>
 
-            <article class="grid-item b">
-                <a href="vandreklub.html">
+            <!-- CHASCO - modal -->
+            <div id="modal-chasco" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>CHASCO</h1>
+                                <h2>Ilustración personal.</h2>
+                            </div>
+                            <p>
+                                Ilustración hecha por amor al arte donde se pueden apreciar mi papá con mis perras en un
+                                lugar de Chascomús lleno de pasto y florcitas.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/chasco.png" alt="chasco" width="1358" height="1080">
+                    </section>
+                </main>
+            </div>
+
+            <!-- 2. VANDREKLUB -->
+            <article class="grid-item">
+                <a href="#modal-vandreklub">
                     <img src="img/web/ilustraciones/vandreklub.jpg" alt="vandreklub" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -168,8 +206,36 @@
                 </div>
             </article>
 
-            <article class="grid-item c">
-                <a href="mar-de-soda.html">
+            <!-- VANDREKLUB - modal -->
+            <div id="modal-vandreklub" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>VANDREKLUB</h1>
+                                <h2>Ilustración realizada para un club de senderismo en Noruega.</h2>
+                            </div>
+                            <p>
+                                Ilustración para un pañuelo de 55x55cm del cual se extrayeron elementos para ser
+                                bordados en gorras, o incluso estampados en remeras y otros soportes.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/vandreklub.jpg" alt="vandreklub" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- 3. MAR DE SODA -->
+            <article class="grid-item">
+                <a href="#modal-mar-de-soda">
                     <img src="img/web/ilustraciones/mar-de-soda.jpg" alt="mar de soda" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -178,8 +244,36 @@
                 </div>
             </article>
 
-            <article class="grid-item d">
-                <a href="fed-26.html">
+            <!-- MAR DE SODA - modal -->
+            <div id="modal-mar-de-soda" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>MAR DE SODA</h1>
+                                <h2>Ilustración para convocatoria.</h2>
+                            </div>
+                            <p>
+                                Proyecto de ilustración para la convocatoria para artistas de la colaboración entre
+                                Ivess y BADA.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/mar-de-soda.jpg" alt="mar de soda" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- FED 26 -->
+            <article class="grid-item">
+                <a href="#modal-fed-26">
                     <img src="img/web/ilustraciones/fed.jpg" alt="feria de editorxs" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -188,8 +282,36 @@
                 </div>
             </article>
 
-            <article class="grid-item e">
-                <a href="pelota.html">
+            <!-- FED26 - modal -->
+            <div id="modal-fed-26" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>FERIA DE EDITORXS 26</h1>
+                                <h2>Ilustración para convocatoria.</h2>
+                            </div>
+                            <p>
+                                Ilustración desarrollada para la convocatoria de realización de afiches para la Feria de
+                                Editorxs del año 2026.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/fed.jpg" alt="feria de editorxs" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- PELOTA -->
+            <article class="grid-item">
+                <a href="#modal-pelota">
                     <img src="img/web/ilustraciones/pelota.jpg" alt="pelota" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -198,8 +320,36 @@
                 </div>
             </article>
 
-            <article class="grid-item f">
-                <a href="coquecat.html">
+            <!-- PELOTA - modal -->
+            <div id="modal-pelota" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>PELOTA</h1>
+                                <h2>Ilustración personal.</h2>
+                            </div>
+                            <p>
+                                Ilustración de un perrito colorinche con una pelota. PD. Estaba probando paleta de color
+                                y texturas/pinceles.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/pelota.jpg" alt="pelota" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- COQUECAT -->
+            <article class="grid-item">
+                <a href="#modal-coquecat">
                     <img src="img/web/ilustraciones/coquecat.jpg" alt="coquecat" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -208,8 +358,35 @@
                 </div>
             </article>
 
-            <article class="grid-item g">
-                <a href="friolento.html">
+            <!-- COQUECAT - modal-->
+            <div id="modal-coquecat" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>COQUECAT</h1>
+                                <h2>Ilustración para emprendimiento.</h2>
+                            </div>
+                            <p>
+                                Ilustración de práctica para ilustrar mascotas.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/coquecat.jpg" alt="coquecat" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- FRIOLENTO -->
+            <article class="grid-item">
+                <a href="#modal-friolento">
                     <img src="img/web/ilustraciones/friolento.jpg" alt="friolento" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -218,8 +395,35 @@
                 </div>
             </article>
 
-            <article class="grid-item h">
-                <a href="oliellypt1000.html">
+            <!-- FRIOLENTO - modal -->
+            <div id="modal-friolento" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>FRIOLENTO</h1>
+                                <h2>Ilustración para emprendimiento.</h2>
+                            </div>
+                            <p>
+                                Ilustración de práctica para ilustrar mascotas.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/friolento.jpg" alt="friolento" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- OLIELLY -->
+            <article class="grid-item">
+                <a href="#modal-oliellypt1000">
                     <img src="img/web/ilustraciones/oliellypt1000.jpg" alt="oliellypt1000" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -228,8 +432,37 @@
                 </div>
             </article>
 
-            <article class="grid-item i">
-                <a href="batharto.html">
+            <!-- OLIELLYPT1000 - modal -->
+            <div id="modal-oliellypt1000" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>OLIELYLPT1000</h1>
+                                <h2>Ilustración experimental.</h2>
+                            </div>
+                            <p>
+                                Ilustración experimental de mis dos mascotas, Elly y Olivia. Y sí, Elly tiene un fernet
+                                en la cabeza.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/oliellypt1000.jpg" alt="oliellypt1000" width="1073"
+                            height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- BATHARTO -->
+            <article class="grid-item">
+                <a href="#modal-batharto">
                     <img src="img/web/ilustraciones/batharto.jpg" alt="batharto" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -238,8 +471,35 @@
                 </div>
             </article>
 
-            <article class="grid-item j">
-                <a href="marcex.html">
+            <!-- BATHARTO - modal -->
+            <div id="modal-batharto" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>BATHARTO</h1>
+                                <h2>Ilustración personal.</h2>
+                            </div>
+                            <p>
+                                Ilustración para experimental con texturas y paleta de color, también estilo.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/batharto.jpg" alt="batharto" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- MARCEX -->
+            <article class="grid-item">
+                <a href="#modal-marcex">
                     <img src="img/web/ilustraciones/marcex.jpg" alt="marcex" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -248,8 +508,35 @@
                 </div>
             </article>
 
-            <article class="grid-item k">
-                <a href="navidad-en-arg.html">
+            <!-- MARCEX - modal -->
+            <div id="modal-marcex" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>MARCEX</h1>
+                                <h2>Ilustración personal.</h2>
+                            </div>
+                            <p>
+                                Ilustración de práctica a partir de una fotografía.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/marcex.jpg" alt="marcex" width="1073" height="1450">
+                    </section>
+                </main>
+            </div>
+
+            <!-- NAVIDAD EN ARG -->
+            <article class="grid-item">
+                <a href="#modal-navidad-en-arg">
                     <img src="img/web/ilustraciones/navidad-en-arg.jpg" alt="navidad en arg" width="348" height="470">
                 </a>
                 <div class="bajada-ilustraciones-visuales">
@@ -258,7 +545,35 @@
                 </div>
             </article>
 
+            <!-- NAVIDAD EN ARG - modal -->
+            <div id="modal-navidad-en-arg" class="modal-contenedor">
+                <main class="ilustracion-zoom-contenedor">
+                    <section class="ilustracion-data">
+                        <div class="header-trucho">
+                            <a href="#grid-container-ilustraciones">
+                                <img src="img/svg/volver_atras.svg" alt="Cerrar modal">
+                            </a>
+                            <p>/ ILUSTRACIONES DESTACADAS.</p>
+                        </div>
+                        <article class="ilustracion-descripcion">
+                            <div class="ilustracion-descripcion-titulo-bajada">
+                                <h1>NAVIDAD EN ARG</h1>
+                                <h2>Ilustración personal.</h2>
+                            </div>
+                            <p>
+                                Ilustración temática sobre la navidad veraniega y la cultura popular argentina.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="ilustracion-zoom">
+                        <img src="img/web/ilustraciones/navidad-en-arg.jpg" alt="navidad en arg" width="1073"
+                            height="1450">
+                    </section>
+                </main>
+            </div>
+
         </section>
+
 
         <!-- CURRÍCULUM -->
 
@@ -284,13 +599,15 @@
                         <h2>/ Experiencia.</h2>
                         <div>
                             <h4>Trabajos independientes / encargos</h4>
-                            <p>Desarrollo de ilustraciones, identidad de marca, piezas publicitarias y stickers
+                            <p>Desarrollo de ilustraciones, identidad de marca, piezas publicitarias y
+                                stickers
                                 comerciales para clientes particulares.</p>
                             <p class="duracion">2025 - en curso</p>
                         </div>
                         <div>
                             <h4>Proyectos académicos de diseño</h4>
-                            <p>Desarrollo integral de proyectos de diseño, incluyendo identidad visual, diseño
+                            <p>Desarrollo integral de proyectos de diseño, incluyendo identidad visual,
+                                diseño
                                 editorial, ilustración y otras piezas de comunicación.</p>
                             <p class="duracion">2023 - en curso</p>
                         </div>
@@ -355,13 +672,32 @@
 
         </details>
 
-        <footer>
-            <p>Copyright 2026 © / Caterina Delás</p>
-            <nav class="footer-nav">
-                <a href="https://www.behance.net/whoskt" target="_blank" class="botones-nav">/ Behance.</a>
-                <a href="https://www.instagram.com/whoskt/?hl=es" target="_blank" class="botones-nav">/ Instagram.</a>
-                <a href="https://www.linkedin.com/in/caterina." target="_blank" class="botones-nav">/ Linkedin.</a>
-            </nav>
-        </footer>
+        <!-- botón solo para el celu!!! (Está simulado, realmente no lleva a ningún lado, al menos por ahora)-->
+        <a href="curriculum.html" class="boton-curriculum-mobile-link">Ver currículum</a>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 © / Caterina Delás</p>
+        <nav class="footer-nav">
+            <a href="https://www.behance.net/whoskt" target="_blank" class="botones-nav">/
+                Behance.</a>
+            <a href="https://www.instagram.com/whoskt/?hl=es" target="_blank" class="botones-nav">/
+                Instagram.</a>
+            <a href="https://www.linkedin.com/in/caterina." target="_blank" class="botones-nav">/
+                Linkedin.</a>
+        </nav>
+    </footer>
+
+    <footer class="footer-mobile">
+        <nav class="footer-nav-mobile">
+            <a href="https://www.behance.net/whoskt" target="_blank" class="botones-nav"><img
+                    src="img/svg/footer/behance.svg" width="40" height="40"></a>
+            <a href="https://www.instagram.com/whoskt/?hl=es" target="_blank" class="botones-nav"><img
+                    src="img/svg/footer/instagram.svg" width="40" height="40"></a>
+            <a href="https://www.linkedin.com/in/caterina." target="_blank" class="botones-nav"><img
+                    src="img/svg/footer/linkedin.svg" width="40" height="40"></a>
+        </nav>
+    </footer>
 
 </body>
