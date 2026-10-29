@@ -1048,7 +1048,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: none;
 }
 
-/**** MOBILE / RESPONSIVE ****/
+/**** MOBILE / RESPONSIVE (PROYECTOS) ****/
 
 @media screen and (max-width: 500px) {
 
@@ -1275,6 +1275,12 @@ input[type="number"]::-webkit-outer-spin-button {
         gap: 6px;
         flex-direction: column;
         min-width: 0;
+    }
+
+    /* esto es para que no sean clickeables las cosas de galería */
+    .grid-container-ilustraciones a {
+        pointer-events: none !important;
+        cursor: default !important;
     }
 
     /* botón para ir SUPUESTAMENTE al currículum */
