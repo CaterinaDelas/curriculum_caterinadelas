@@ -278,8 +278,6 @@ main {
 /* INDEX.HTML - flechita de portada */
 .portada img {
     position: relative;
-    width: 68px;
-    height: 72px;
     animation: flotar 1s ease-in-out infinite;
     margin-top: 20px;
 }
