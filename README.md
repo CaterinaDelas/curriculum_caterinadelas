@@ -2,7 +2,7 @@
 Este repositorio adjunta lo que sería el primer trabajo práctico de Computación III, en UNLa.
 El currículum fue la forma para aprender a cómo manejarse con HTML5, CSS y cómo diagramarlo con Flexbox.
 
-## ACTUALIZACIÓN PARA PRE ENTREGA DEL PORTFOLIO
+## ACTUALIZACIÓN PARA LA ENTREGA DEL PORTFOLIO
 Este mismo repositorio se actualizó en cuanto a contenido al incluir lo que pusimos en práctica después de maquetar y prototipar con Figma. 
 
 ### Otros datos:
