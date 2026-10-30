@@ -1037,13 +1037,18 @@ input[type="number"]::-webkit-outer-spin-button {
     max-width: none;
 }
 
-/* Menú y footer específicos de celular: ocultos en escritorio. */
+
+/* esto se oculta en el desktop. */
 .menu-hamburguesa {
     display: none;
 }
 
 #footer-mobile {
     display: none;
+}
+
+.boton-curriculum-mobile-link {
+    display: none !important;
 }
 
 /**** MOBILE / RESPONSIVE (PROYECTOS) ****/
@@ -1317,9 +1322,7 @@ input[type="number"]::-webkit-outer-spin-button {
         align-items: center;
     }
 
-}
-
-/* esto es para ocultar cositas */
+    /* esto es para ocultar cositas */
     .curriculum-accordion {
         display: none;
     }
@@ -1327,3 +1330,5 @@ input[type="number"]::-webkit-outer-spin-button {
     footer {
         display: none;
     }
+
+}
